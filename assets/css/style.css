@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCD232;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    float: right;
+    height: 100%;
+    width: 80%;
+}
+
+.logoimg {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg img {
+    width: 100%;
+}
+
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+
+}
+
+ul li a:hover, ul li a:active {
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+ul {
+    margin: 0;
+}
+
+.navHead {
+    height: 100px;
+}
+
+.navBtn {
+    padding: 10px;
+    margin: 20px;
+}
+
+.navBtn a {
+    color: white;
+    padding: 15px 0;
+}
+
+.navBtn a:hover {
+    color: black;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.navigon {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.modal-content {
+    background-color: #FCD232;
+}
+.modal-header h5 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-footer p {
+    text-align: center;
+}
+.modal-footer i {
+    color: red;
+}
+
+.col-md-4 {
+    min-height: 0;
+}
+
+.overlay {
+    background-color: rgba(60, 67, 72, 0.73);
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.firstphoto {
+    background-image: url("../../assets/img/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.red {
+    height: 15vh;
+}
+
+.redbtn {
+    background-color: rgb(31, 31, 39);
+    color: white;
+    padding: 25px;
+    height: 100%;
+    border: rgb(31, 31, 39);
+    border-left: 1px solid rgb(51, 51, 51);
+}
+
+.redbtn:focus {
+    outline: rgb(31, 31, 39);
+}
+
+.redbtn:hover, .redbtn.active {
+    background-color: #EB3838;
+    transition: all .35s ease-in-out;
+}
+
+.left {
+    float: left;
+    width: 85%;
+    text-align: left;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    float: right;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right i {
+    color: rgb(31, 31, 39);
+}
+
+.cardcontent h5 {
+    background-color: #FCD232;
+    padding: 10px;
+    width: 85%;
+    text-align: center;
+}
+
+.photo {
+    height: 100%;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail .caption {
+    padding: 15px;
+    font-weight: bold;
+}
+span {
+    background-color: yellow;
+}
+.thumbnail {
+    border-radius: 15px;
+    padding: 0;
+    border: none;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    transition: all .5s ease-in-out;
+    width: 100%;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05) translate(0, -5px);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
+    transition: all .5s ease-in-out;
+    scale: 3px;
+}
+
+.imagecard {
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    border: none;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+}
+
+.img1 {
+    background-image: url("../../assets/img/Marketing/andrew-neel-fkalryO4dUI-unsplash.jpg");
+}
+
+.img2 {
+    background-image: url("../../assets/img/Marketing/campaign-creators-gMsnXqILjp4-unsplash.jpg");
+}
+
+.img3 {
+    background-image: url("../../assets/img/Marketing/campaign-creators-yktK2qaiVHI-unsplash.jpg");
+}
+
+.img4 {
+    background-image: url("../../assets/img/Marketing/carlos-muza-hpjSkU2UYSU-unsplash.jpg");
+}
+
+.img5 {
+    background-image: url("../../assets/img/Marketing/diggity-marketing-SB0WARG16HI-unsplash.jpg");
+}
+
+.img6 {
+    background-image: url("../../assets/img/Marketing/6.jpg");
+}
+
+.img7 {
+    background-image: url("../../assets/img/Programing/bench-accounting-C3V88BOoRoM-unsplash.jpg");
+}
+
+.img8 {
+    background-image: url("../../assets/img/Programing/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+}
+
+.img9 {
+    background-image: url("../../assets/img/Programing/danial-ricaros-FCHlYvR5gJI-unsplash.jpg");
+}
+
+.img10 {
+    background-image: url("../../assets/img/Programing/emma-dau-n_4iTY1KmDE-unsplash.jpg");
+}
+
+.img11 {
+    background-image: url("../../assets/img/Programing/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg");
+}
+
+.img12 {
+    background-image: url("../../assets/img/Programing/12\ \(1\).jpg");
+}
+
+.img13 {
+    background-image: url("../../assets/img/Programing/13.jpg");
+}
+
+.img14 {
+    background-image: url("../../assets/img/Programing/14.jpg");
+}
+
+.img15 {
+    background-image: url("../../assets/img/Design/brad-neathery-mGH253KbfaY-unsplash.jpg");
+}
+
+.img16 {
+    background-image: url("../../assets/img/Design/headway-5QgIuuBxKwM-unsplash.jpg");
+}
+
+.img17 {
+    background-image: url("../../assets/img/Design/kelly-sikkema-o2TRWThve_I-unsplash.jpg");
+}
+
+.img18 {
+    background-image: url("../../assets/img/Design/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg");
+}
+
+.img19 {
+    background-image: url("../../assets/img/Design/15.jpg");
+}
+
+.img20 {
+    background-image: url("../../assets/img/Design/20.jpg");
+}
+
+.proekt {
+    margin: 50px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.cardcontent h6, .cardcontent h4 {
+    font-weight: bolder;
+    
+}
+
+
+.photo .glow-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 10px;
+    margin-top: -10px;
+}
+
+.photo .glow {
+    display: block;
+    position: absolute;
+    width: 104%;
+    height: 176%;
+    background: rgba(255, 255, 255, .2);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.thumbnail:hover .glow {
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1) ease-in-out;
+}
+
+.photo:hover img, .photo:hover .glow-wrap {
+    margin-top: 0;
+}
+
+.column {
+    float: left;
+    display: none;
+}
+
+/* form site */
+
+.form-control {
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.subbutton button {
+    margin-top: 25px;
+    height: 60px;
+}
+
+.btn-danger {
+    background-color: #FA1402;
+}
+
+.choise option {
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #60666d;
+}
+
+.select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus+.select-box__list {
+    opacity: 1;
+    animation-name: none;
+}
+
+.select-box__current:focus+.select-box__list .select-box__option {
+    cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 43%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked+.select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 60px;
+    background-color: #fff;
+    padding: 16px 12px;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.select-box__list {
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-box__list li {
+    padding: 0;
+}
+
+.select-box__list label {
+    margin-bottom: 0;
+}
+
+.select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.select-box__option:hover, .select-box__option:focus {
+    color: #546c84;
+    background-color: rgb(252, 231, 147);
+    transform: scale(1) translate(0, -4px);
+    box-shadow: 4px 4px 12px 3px rgba(155, 155, 155, 0.75);
+    transition: all .5s ease-in-out;
+    scale: 2px;
+}
+
+@keyframes HideList {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.list>.navDecor>a:focus, .list>.navDecor>a:hover {
+    text-decoration: none;
+    color: rgb(206, 20, 7);
+    background-color: transparent;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 27px;
+    right: 35px;
+}
+
+.toggle-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45px;
+    align-items: flex-end;
+}
+
+.toggle-nav:hover {
+    cursor: pointer;
+}
+
+.toggle-nav div {
+    width: 100%;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #555555;
+    margin: 3px;
+}
+
+.toggle-nav div:nth-child(2) {
+    width: 75%;
+}
+
+.toggle-nav div:nth-child(3) {
+    width: 50%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    height: 100%;
+    background-color: #302e38;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.35s ease-in-out;
+    padding-top: 50px;
+}
+
+.sidebar a {
+    color: #868686;
+    padding: 20px 10px 10px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+.butt a {
+    color: #FCD232;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar a i {
+    position: absolute;
+    right: 35px;
+    top: 24px;
+    font-size: 50px;
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .list {
+        display: none;
+        margin-top: 50px;
+        height: 100%;
+        width: 82%;
+    }
+    ul li {
+        margin-bottom: 27px;
+    }
+}

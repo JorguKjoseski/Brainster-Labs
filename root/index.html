@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 01</title>
+    <meta name='keywords' content='html,css,javascript'>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <link
+        href="https://fonts.googleapis.com/css?family=Grenze:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,700,700i,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel='stylesheet' type='text/css' href='../assets/css/style.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- NAVBAR -->
+        <!-- <div class="container"> -->
+        <nav class="nav">
+            <div class="navbar-header navHead">
+                <div class="navigation  hidden-md hidden-lg">
+                    <div onclick="showSidebar()" class="toggle-nav">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sidebar">
+                        <a onclick="closeSidebar()"><i class="fas fa-times fa-2x"></i></a>
+                        <a href="https://marketpreneurs.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=mkt" target="_blank">Академија за маркетинг</a>
+                        <a href="http://codepreneurs.co/ " target="_blank">Академија за програмирање</a>
+                        <a href="https://datascience.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=data_science"
+                            target="_blank">Академија за data science</a>
+                        <a href="https://design.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=design" target="_blank">Академија за дизајн</a>
+                        <div class="butt">
+                            <button class="btn btn-danger navBtn"><a href="form_site.html">Вработи наш
+                                    студент</a></button>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand logoimg" href="INDEX.html"><img src="../assets/img/Brainster-Logo-031.png"
+                        class="img img-responsive logo" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse menu hidden-xs" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right list">
+                    <li class="navDecor"><a href="https://marketpreneurs.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=mkt" target="_blank">Академија за маркетинг</a></li>                  
+                           
+                    <li class="navDecor"><a href="http://codepreneurs.co/ " target="_blank">Академија за програмирање</a></li>                           
+                    <li class="navDecor"><a href="https://datascience.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=data_science" target="_blank">Академија за data science</a></li>
+                    <li class="navDecor"><a href="https://design.brainster.co/?utm_source=brainster.co&utm_medium=academies&utm_campaign=website&utm_content=design" target="_blank">Академија за дизајн</a></li>                      
+                    <li>
+                        <!-- <button class="btn btn-danger navBtn"><a href="form_site.html">Вработи наш
+                                    студент</a></button> -->
+                        <button type="button" class="btn btn-danger navBtn" data-toggle="modal" data-target="#Modal">
+                            Вработи наш студент
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+
+        <!-- Modal -->
+
+
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <figure class="logo">
+
+                        </figure>
+                        <h5 class="modal-title ml-auto font-weight-bold" id="ModalLabel">Вработи наш студент</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="TextInput1">Име и Презиме</label>
+                                <input type="text" class="form-control" id="ModalLabel" aria-describedby="TextInput1"
+                                    placeholder="Вашето Име и Презиме">
+                            </div>
+                            <div class="form-group">
+                                <label for="TextInput2">Име на компанијата</label>
+                                <input type="text" class="form-control" id="ModalLabel" aria-describedby="TextInput2"
+                                    placeholder="Име на Вашата компанија">
+                            </div>
+                            <div class="form-group">
+                                <label for="TextInput3">Контакт телефон</label>
+                                <input type="text" class="form-control" id="ModalLabel" aria-describedby="TextInput3"
+                                    placeholder="Контакт телефон на Вашата компанија">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Контакт имејл</label>
+                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Контакт имејл на Вашата компанија">
+                                <small id="emailHelp" class="form-text text-muted">* Ние никогаш нема да го сопделуваме
+                                    Вашиот имејл со
+                                    други.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="FormControlSelect1">Изберете тип на студент</label>
+                                <select class="form-control" id="FormControlSelect1">
+                                    <option>Студенти од маркетинг</option>
+                                    <option>Студенти од програмирање</option>
+                                    <option>студенти од data science</option>
+                                    <option>Студенти од дизајн</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-danger" data-target="#alert"
+                                onclick="alert('Вашата апликација е успешно испратена')">Испрати</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Затвори</button>
+                        <p>Изработено со <i class="fas fa-heart"></i> од студентите на Brainster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--PART 01-->
+        <div class="row firstphoto">
+            <div class="col-xs-12 col-md-12 overlay">
+                <div class="h1">Brainster Labs</div>
+            </div>
+        </div>
+
+        <div class="row red filter-options" id="myBtnContainer">
+
+            <button class="btn1 col-xs-12 col-sm-12 col-md-4 redbtn " onclick="filterSelection('marketing')"
+                data-group="marketing">
+                <div class="left">Проекти на студенти по академијата за маркетинг</div>
+                <div class="right"><i class="fas fa-check-circle fa-2x"></i></div>
+                <div onclick="filterSelection('all')"></div>
+            </button>
+            <button class="btn1 col-xs-12 col-sm-12 col-md-4 redbtn" onclick="filterSelection('programming')"
+                data-group="programming">
+                <div class="left">Проекти на студенти по академијата за програмирање</div>
+                <div class="right"><i class="fas fa-check-circle fa-2x"></i></div>
+                <div onclick="filterSelection('all')"></div>
+            </button>
+            <button class="btn1 col-xs-12 col-sm-12 col-md-4 redbtn" onclick="filterSelection('design')"
+                data-group="design">
+                <div class="left">Проекти на студенти по академијата за дизајн</div>
+                <div class="right"><i class="fas fa-check-circle fa-2x"></i></div>
+                <div onclick="filterSelection('all')"></div>
+            </button>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <div class="h2 proekt">Проекти</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing ">
+                                <div class="photo content">
+                                    <div class="img1 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardone">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing">
+                                <div class="photo content">
+                                    <div class="img2 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing">
+                                <div class="photo content">
+                                    <div class="img3 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing">
+                                <div class="photo content">
+                                    <div class="img4 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing">
+                                <div class="photo content">
+                                    <div class="img5 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv marketing">
+                                <div class="photo content">
+                                    <div class="img6 imagecard" alt="..."></div>
+
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за маркетинг</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img7 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img8 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img9 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img10 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img11 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img12 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img13 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img14 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img15 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <div class="h6">Април-Октомври 2019</div>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv programming">
+                                <div class="photo content">
+                                    <div class="img16 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за програмирање</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <h6>Април-Октомври 2019</h6>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv design">
+                                <div class="photo content">
+                                    <div class="img17 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за дизајн</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <h6>Април-Октомври 2019</h6>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 ">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv design">
+                                <div class="photo content">
+                                    <div class="img18 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за дизајн</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <h6>Април-Октомври 2019</h6>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv design">
+                                <div class="photo content">
+                                    <div class="img19 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за дизајн</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <h6>Април-Октомври 2019</h6>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="thumbnail column filterDiv design">
+                                <div class="photo content">
+                                    <div class="img20 imagecard" alt="..."></div>
+                                </div>
+                                <div class="caption cardcontent">
+                                    <span>Академија за дизајн</span>
+                                    <h4>Името на проектот стои овде во две линии</h4>
+                                    <p>Краток опис во кој студентите ќе можат да опишат за што се работи во проектот</p>
+                                    <h6>Април-Октомври 2019</h6>
+                                    <p class="text-right"><a href="#" class="btn btn-danger" role="button">Дознај
+                                            повеќе</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer text-center">
+                <div class="h5 footText">Изработено од JB</div>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="../assets/js/myScript.js"></script>
+</body>
+
+</html>
